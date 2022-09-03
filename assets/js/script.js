@@ -10,6 +10,7 @@ const navToggleEvent = (elem) => {
   console.log(navLinks)
   for(let i = 0; i < elem.length; i++){
     elem[i].addEventListener('click', () =>{
+      document.body.classList.toggle("active")
       navbar.classList.toggle("active")
       overlay.classList.toggle("active")
     })
